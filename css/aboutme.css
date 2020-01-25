@@ -1,0 +1,346 @@
+/*****************************************************
+GENERAL
+*****************************************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+ text-decoration: none; 
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+
+
+
+/*****************************************************
+HEADING
+*****************************************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight:normal;
+}
+
+
+/*****************************************************
+FOOTER
+*****************************************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+/*****************************************************
+PAGE: PORTFOLIO
+*****************************************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7
+}
+
+
+
+/*****************************************************
+PAGE: CONTACT
+*****************************************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+  
+
+/*****************************************************
+PAGE: ABOUT
+*****************************************************/
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+
+
+/*****************************************************
+COLORS
+*****************************************************/
+
+/* site body */
+
+body {
+  background-color: #333;
+  color: #999;
+    overflow: hidden;
+}
+
+p {
+  color: white;
+}
+
+/* green header */
+
+header {
+  background: #6ab47b;
+  border-color: #599a68;
+}
+
+/* nav background on mobile */
+
+nav {
+  background: #599a68;
+}
+
+/* logo text */
+
+h1, h2, h3 {
+  color: #fff;
+}
+
+/* links */
+
+a {
+  color: #6ab47b;
+}
+
+/* nav link */
+
+nav a, nav a:visited  {
+  color: #fff;
+}
+
+/* selected nav link */
+
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
+
+/* Photo Part */
+#main section#about .page .left {
+	float: left;
+	width: 530px;
+}
+
+#main section#about .page .right {
+	float: right;
+	width: 453px;
+}
+
+.staff_list:after, .staff_item:before {
+	content: '';
+	display: table;
+}
+
+.staff_list:after {
+	clear: both;
+}
+
+.staff_list ul {
+	width: 100%;
+  display: table;
+  table-layout: fixed;
+    
+}
+
+.staff_list li {
+display:table;
+    margin:60px auto 0px auto;
+}
+
+
+.staff_list a.inline {
+	display: block;
+	width: 150px;
+	height: 150px;
+}
+
+.staff_item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 
+	inset 0 0 0 0 rgba(174,0,0,0.4),
+	0 1px 2px rgba(0,0,0,0.1);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	behavior: url('http://www.serialgames.co.jp/js/PIE.htc')
+}
+
+.staff_info {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-backface-visibility: hidden;
+}
+
+.staff_item:hover {
+	box-shadow: 
+	inset 0 0 0 110px rgba(0,0,0, 0.4),
+	0 1px 2px rgba(0,0,0,0.1);
+}
+
+.staff_item:hover .staff_info {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);	  
+}
+
+.staff_info h2 {
+	color: #fff;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 60px 0 0 0;
+	height: 95px;
+	font-family: 'Arvo',sans-serif;
+	text-shadow: 
+	0 0 1px #fff, 
+	0 1px 2px rgba(0,0,0,0.3);
+}
+
+
+.staff_img01 {
+	background-image:  url(../img/its_me.jpg);
+}
+.staff_content .intro_area {
+	float: left;
+	width: 435px;
+	margin-top: 30px;
+}
+
+.staff_content .intro_area dt {
+	font-weight: bold;
+	font-family: 'Arvo',sans-serif;
+	margin-bottom: 7px;
+}
+
+.staff_content .intro_area dt:before {
+	content: '-';
+	padding: 0 10px 0 0;
+}
+
+.staff_content .intro_area dt:after {
+	content: '-';
+	padding: 0 0 0 10px;
+}
+
+.staff_content .intro_area dd {
+	margin-bottom: 20px;
+}
+
+.staff_content .img_area {
+	float: right;
+	width: 320px;
+}

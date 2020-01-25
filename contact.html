@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Suman Photography</title>
+    <link rel="stylesheet" href="theme/navbar.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/contact.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="http://sumanphotography.com/favicon.ico"/>
+    <meta name="description" content="A collection of beautiful photographs!" />
+    </head>
+<body>
+      <!--Navigation Bar-->
+    <div id="nav-bar" class="load-item">
+        <a href="index.html">Home</a>
+		<a href="albums.html">Albums</a>
+		<a href="aboutme.html">About Me</a>
+		<a href="contact.html">Contact</a>
+    </div>
+    
+	<section id="hire">
+    <h1>Contact Me</h1>
+        
+    <form method="post" action="/script/contact.php">
+	      <div class="field name-box">
+		        <input name="name"type="text" id="name" placeholder="Who Are You?"/>
+        		<label for="name">Name</label>
+		        <span class="ss-icon">check</span>
+	      </div>
+
+	      <div class="field email-box">
+		        <input name="email" type="text" id="email" placeholder="name@email.com"/>
+		        <label for="email">Email</label>
+		        <span class="ss-icon">check</span>
+	      </div>
+
+	      <div class="field msg-box">
+		        <textarea name ="msg" id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+		        <label for="msg">Msg</label>
+		        <span class="ss-icon">check</span>
+	      </div>
+
+	      <input name="submit" class="button" type="submit" value="Send" />
+  </form>
+</section>
+    </body>
+</html>
